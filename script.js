@@ -60,3 +60,55 @@ const functionExpression = function(food,howMany){
 }
 let final2 = functionExpression("pizza", 3);
 console.log(final2);
+
+
+// arrow function
+
+const arrfun = birthday => 2022 - birthday;
+console.log(arrfun(1991));
+
+// arrow function with many parameters
+
+const mul = (num1, num2) => {
+    return num1*num2;
+}
+console.log(mul(2,5));
+
+
+// foreign currency converter by recursive function (function call a function)
+
+function converter(money){
+    const values = money * 1.5 ;
+    return values;
+}
+
+function currency(money){
+    const convert = converter(money);
+    return convert;
+}
+
+console.log(currency(200));
+
+// calculate the average and win one team if its scores is double of other team
+
+const calculateAvg = (num1, num2, num3) => {
+    return (num1+num2+num3)/3;
+}
+
+const avgTeam1 = calculateAvg(20,19,60);
+const avgTeam2 = calculateAvg(100,99,88);
+
+const checkWinner= function(team1 , team2){
+   
+    if(team1>(team2*2)){
+        console.log(`the winner is team 1! ${team1} vs ${team2}`);
+    }else if(team1===team2){
+        console.log(`draw!`)
+    }else if(team2>(team1*2)){
+        console.log(`the winner is team 2! ${team2} vs ${team1}`)
+    }else{console.log(`sorry there is no winner!`)}
+
+}
+
+const finalResult = (checkWinner(avgTeam1,avgTeam2));
+console.log(finalResult);
