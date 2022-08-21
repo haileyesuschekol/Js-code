@@ -40,3 +40,18 @@ if(personOnEvent.includes('fayzel')){
     console.log('welcome'); 
 }else{console.log('no enter'); }
 
+
+// tip calcualtor
+// if th bill is between 50 - 300 the tip is 15% other wise 20%
+
+const tipCalc =  billCalc =>{
+    return billCalc>=50 && billCalc<=300 ? billCalc*(15/100) : billCalc*(20/100);     
+}
+
+const bills = [125,550,44];
+
+const tips = [tipCalc(bills[0],),tipCalc(bills[1],),tipCalc(bills[2],)];
+console.log(tips);
+
+const final = [bills[0]+tips[0],bills[1]+tips[1],bills[2]+tips[2]];
+console.log(final);
