@@ -1,3 +1,4 @@
+'use strict'
 //objects 
 
 const applicant = {

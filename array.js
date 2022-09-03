@@ -1,3 +1,4 @@
+'use strict'
 // arrays
 
 const friendsName = ['name1','name2','name3'];
