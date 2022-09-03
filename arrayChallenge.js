@@ -17,3 +17,17 @@ const maxVal = function(temp1,temp2){
  const temp2 = [37,33,38,39,33];
  
  console.log(maxVal(temp1,temp2));
+
+ 
+ // challenge-2  convert array to string  
+const forcast = function(temperature){
+    let str ='';
+    
+    for(let i=0;i<temperature.length;i++){
+        str += `... ${temperature[i]}°C in ${i+1} days `;  
+    }
+    console.log(str);
+}
+const temp=[17,21,23];
+
+forcast(temp);
