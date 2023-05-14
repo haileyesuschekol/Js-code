@@ -32,7 +32,60 @@
 //math.random()
 
 
+//conditional statment
 
+// let weather = 'sunny'
+
+// if(weather == 'sunny'){
+//     console.log('wear your sunglasses')
+// }else{
+//     console.log('grab your umbrella')
+// }
+
+//conditional operators
+// == , === , <,> ,<=,>= ,!== , !=
+
+
+//Function
+
+// function sayMyName(){
+// console.log('haile')
+// }
+// sayMyName()
+
+// function with argument
+
+// function sayMyName2(myName){
+// console.log(myName)
+// }
+// sayMyName2('my name is haile')
+
+
+// templet litrals
+
+// function greeting(yourName){
+//     console.log(`hello ${yourName} how are you ?`)
+// }
+
+// greeting('baba')
+
+
+// return make the function reusable
+// function sum(a, b){
+//     return a+b
+// }
+
+
+// function totalFoodCalculator(a,b){
+//      totalFood = a
+//      tip = b
+//      amountTip = b/100*a
+//     const total = sum(a,amountTip)
+//     console.log(total) 
+
+// }
+
+// totalFoodCalculator(400,20)
 
 
 
