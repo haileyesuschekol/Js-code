@@ -227,6 +227,46 @@ const maxNum =(num)=>{
     }
     return {result}
 }
-
 //console.log(maxNum([4,5,6,3,7,5,23,4]))
+
+// example
+const frequencyChecker=(phrase)=>{
+let frequency ={}
+for(const letter of phrase){
+    console.log(letter)
+    if(letter in frequency){
+        frequency[letter]+=1
+    }else{
+        frequency[letter] =1
+    }
+} 
+return frequency
+}
+
+//console.log(frequencyChecker('heloo'))
+
+
+// const obj ={
+//     names:'ha',
+//     age:24
+// }
+
+// console.log(names in obj)
+
+const wordFrequency =(words)=> {
+    let frequency={}
+     newWords=words.split(' ')
+     //console.log(newWords)
+     for(const word of newWords){
+        if(word in frequency){
+            frequency[word]+=1
+        }else{
+            frequency[word]=1
+        }
+     }
+     return frequency    
+}
+
+//console.log(wordFrequency('hello man hello'))
+
 
