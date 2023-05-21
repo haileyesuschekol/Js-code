@@ -270,3 +270,34 @@ const wordFrequency =(words)=> {
 //console.log(wordFrequency('hello man hello'))
 
 
+// higer order function
+
+//map
+//filter
+//reduce
+
+//map - loops and returns an array
+
+arr =[1,2,3,4,5].map(number=>{
+    // console.log(number)
+    // console.log('hello this is map')
+})
+
+let amap =['1', '2' ,'3'].map(number =>number*2)
+//console.log(amap)
+
+const doubleNum = (num)=>{
+    return num.map(dNum => dNum*2)
+}
+//console.log(doubleNum([1,2,3,4]))
+
+//filter - loops amd return an array with conditions
+
+const filters =(nums) =>{
+let filterNumber = nums.filter(num=> num > 2)
+return filterNumber
+}
+//console.log(filters([1,2,3,4]))
+
+
+
