@@ -299,5 +299,27 @@ return filterNumber
 }
 //console.log(filters([1,2,3,4]))
 
+const highNetWorth =[
+    {name: 'jo', netWorth:1000},
+    {name: 'abi',netWorth:2000},
+    {name: 'zia',netWorth:3000}
+]
+
+let netWorths = highNetWorth.filter(worth => worth.netWorth > 1000)
+const namesOfActors = netWorths.map(actor => actor.name)
+//console.log(namesOfActors,netWorths)
+
+//reduce()
+//loops and give back the accumulator
+//takes in a functiona as an argument 
+//reduces to one number
+
+const sumArray =[1,2,3,4]
+const sumResult = sumArray.reduce((a , b)=> a+b)
+//console.log(sumResult)
+
+let sunIncomes = highNetWorth.reduce((pre, curr)=>pre + curr.netWorth, 0)
+//console.log(sunIncomes)
+
 
 
