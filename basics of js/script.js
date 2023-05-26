@@ -321,5 +321,29 @@ const sumResult = sumArray.reduce((a , b)=> a+b)
 let sunIncomes = highNetWorth.reduce((pre, curr)=>pre + curr.netWorth, 0)
 //console.log(sunIncomes)
 
+// logs random item from array
+const selectRandom =(vegitable)=>{
 
+    let random = Math.floor(Math.random()*vegitable.length)
+    return vegitable[random]
+}
 
+let vegitables =['cabbage','carrot','salad','chilli','onion']
+//console.log(selectRandom(vegitables))
+
+//if else
+const TodaysWeather=(weather)=>{
+    let score
+    if(weather=='sunny'){
+        score=1
+        //console.log(score)
+    }else if(weather=='rainy'){
+        score =-1
+        //console.log(score)
+    }else{
+        score=0
+        //console.log(score)
+    }
+}
+
+TodaysWeather('rainy')
